@@ -24,14 +24,15 @@ export default function ScrollCover() {
                 className="grid grid-cols-1 grid-rows-[100dvh_300dvh] rounded"
                 ref={ref}
             >
-                <div className="sticky top-0 col-start-1 row-start-1">
+                <div className="sticky top-0 col-start-1 row-start-1 bg-lime-300">
                     <video
                         autoPlay
                         loop
                         muted
                         className="h-full w-full object-cover object-center"
-                        src={"./video.mp4"}
-                    ></video>
+                    >
+                        <source src={"video.webm"} />
+                    </video>
                     <div
                         className="absolute left-0 top-0 h-full w-full"
                         style={{ background: "linear-gradient(to top, #000 0%, transparent 10%)" }}
