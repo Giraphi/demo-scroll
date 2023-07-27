@@ -44,7 +44,7 @@ export default function ScrollCover() {
                 >
                     <div>
                         <h1
-                            className={"text-6xl text-white md:text-8xl lg:text-9xl"}
+                            className={"font-bungee text-6xl text-white md:text-8xl lg:text-9xl"}
                             style={{ textShadow: "#FC0 1px 0 10px" }}
                         >
                             Welcome
