@@ -18,13 +18,4 @@
       "allowImportingTsExtensions": true
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
 }
-
-//
-//import svgr from "vite-plugin-svgr";
-//
-//export default {
-//// ...
-//plugins: [svgr()],
-//};
