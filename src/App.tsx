@@ -1,7 +1,7 @@
-import Cover from "./Cover/Cover.tsx";
+import ScrollCover from "./ScrollCover/ScrollCover.tsx";
 
 function App() {
-    return <Cover />;
+    return <ScrollCover />;
 }
 
 export default App;

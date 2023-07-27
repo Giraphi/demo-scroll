@@ -1,11 +1,9 @@
 import { useRef } from "react";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
-import CoverContent from "./CoverContent";
-// import { Bungee_Inline } from "next/font/google";
-// const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400", variable: "--font-bungee" });
+import ScrollCoverFront from "./ScrollCoverFront.tsx";
 
-export default function Cover() {
+export default function ScrollCover() {
     const ref = useRef<HTMLDivElement>(null);
 
     const { scrollYProgress } = useScroll({
@@ -22,9 +20,18 @@ export default function Cover() {
     return (
         // <div className={`${bungee.variable}`}>
         <div>
-            <div className="grid grid-cols-1 grid-rows-[100dvh_300dvh] rounded" ref={ref}>
+            <div
+                className="grid grid-cols-1 grid-rows-[100dvh_300dvh] rounded"
+                ref={ref}
+            >
                 <div className="sticky top-0 col-start-1 row-start-1">
-                    <video autoPlay loop muted className="h-full w-full object-cover object-center" src={"./video.mp4"}></video>
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        className="h-full w-full object-cover object-center"
+                        src={"./video.mp4"}
+                    ></video>
                     <div
                         className="absolute left-0 top-0 h-full w-full"
                         style={{ background: "linear-gradient(to top, #000 0%, transparent 10%)" }}
@@ -38,14 +45,17 @@ export default function Cover() {
                     <div>
                         <h1
                             className={"text-6xl text-white md:text-8xl lg:text-9xl"}
-                            style={{ fontFamily: "var(--font-bungee)", textShadow: "#FC0 1px 0 10px" }}
+                            style={{ textShadow: "#FC0 1px 0 10px" }}
                         >
                             Welcome
                         </h1>
                     </div>
                 </motion.div>
 
-                <motion.div className="sticky top-0 col-start-1 row-start-1 bg-white" style={{ opacity: overlayOpacity }}></motion.div>
+                <motion.div
+                    className="sticky top-0 col-start-1 row-start-1 bg-white"
+                    style={{ opacity: overlayOpacity }}
+                ></motion.div>
 
                 <motion.div
                     style={{ opacity: coverOpacity }}
@@ -53,13 +63,16 @@ export default function Cover() {
                         "sticky top-0 col-start-1 row-start-1 flex w-full items-center justify-center overflow-hidden mix-blend-multiply"
                     }
                 >
-                    <motion.div className={"h-full w-full"} style={{ scale: zoom, transformOrigin: "51%" }}>
-                        <CoverContent />
+                    <motion.div
+                        className={"h-full w-full"}
+                        style={{ scale: zoom, transformOrigin: "51%" }}
+                    >
+                        <ScrollCoverFront />
                     </motion.div>
                 </motion.div>
             </div>
             <div className={"h-[50dvh] bg-black"}>
-                <h1 className={"pt-16 text-center font-sans text-5xl text-white"}>Site flow continues here ....</h1>
+                <h1 className={"pt-16 text-center text-5xl text-white"}>Site flow continues here ....</h1>
             </div>
         </div>
     );
