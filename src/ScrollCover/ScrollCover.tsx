@@ -30,6 +30,7 @@ export default function ScrollCover() {
                         loop
                         muted
                         className="h-full w-full object-cover object-center"
+                        poster={"video-poster.webp"}
                     >
                         <source src={"video.webm"} />
                     </video>
