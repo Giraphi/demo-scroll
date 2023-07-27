@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
+import React from "react";
+
 import ScrollCoverFront from "./ScrollCoverFront";
 
 export default function ScrollCover() {

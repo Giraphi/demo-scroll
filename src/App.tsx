@@ -1,3 +1,4 @@
+import React from "react";
 import ScrollCover from "./ScrollCover/ScrollCover";
 
 function App() {

@@ -1,3 +1,5 @@
+import React from "react";
+
 import { ReactComponent as Eye } from "./eye.svg";
 
 export default function ScrollCoverFront() {
