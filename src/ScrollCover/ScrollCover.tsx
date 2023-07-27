@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
-import ScrollCoverFront from "./ScrollCoverFront.tsx";
+import ScrollCoverFront from "./ScrollCoverFront";
 
 export default function ScrollCover() {
     const ref = useRef<HTMLDivElement>(null);

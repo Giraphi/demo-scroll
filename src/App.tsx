@@ -1,4 +1,4 @@
-import ScrollCover from "./ScrollCover/ScrollCover.tsx";
+import ScrollCover from "./ScrollCover/ScrollCover";
 
 function App() {
     return <ScrollCover />;
