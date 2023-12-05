@@ -1,8 +1,8 @@
 import React from "react";
-import ScrollCover from "./ScrollCover/ScrollCover";
+import ScrollAnimation from "./ScrollAnimation/ScrollAnimation.tsx";
 
 function App() {
-    return <ScrollCover />;
+    return <ScrollAnimation />;
 }
 
 export default App;
